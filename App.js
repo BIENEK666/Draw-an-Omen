@@ -80,7 +80,7 @@ console.log(this.predictions)
       type = "text"
       className = "addPredictionInput"/>
       <button className = "addPredictionBtn" onClick={this.handleAddBtn}>ADD</button>
-      <h1>{this.state.h1Content}</h1>
+      {this.state.h1Content ? <h1>{this.state.h1Content}</h1> : null}
       </>
     );
   }
